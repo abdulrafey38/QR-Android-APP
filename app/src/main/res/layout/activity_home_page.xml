@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc2"
+    tools:context=".homePage">
+
+
+    <TextView
+        android:id="@+id/student_portal"
+        android:layout_width="361dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center_horizontal|center"
+        android:fontFamily="Ubuntu"
+        android:gravity="center"
+        android:text="STUDENT PORTAL"
+        android:textColor="#2a46b7"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shapeemail"
+
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+
+        android:id="@+id/s_info"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Student information:"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <Button
+        android:id="@+id/markAttendancePageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapelogin"
+        android:paddingHorizontal="@android:dimen/notification_large_icon_width"
+        android:text="Mark Attendance"
+        android:textColor="#2a46b7"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <Button
+        android:id="@+id/viewAttendanceBtn"
+        android:layout_width="296dp"
+        android:layout_height="48dp"
+        android:background="@drawable/shapelogin"
+        android:paddingHorizontal="@android:dimen/notification_large_icon_width"
+        android:text="View Attendance"
+        android:textColor="#2a46b7"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/markAttendancePageBtn"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <ListView
+        android:id="@+id/nameLv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/shapelist"
+        app:layout_constraintBottom_toTopOf="@+id/markAttendancePageBtn"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <!--
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginBottom="148dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:backgroundTint="#036ffc"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/markAttendancePageBtn"
+            app:layout_constraintVertical_bias="0.187" />
+    -->
+
+    <!--
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="91dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="684dp"
+            android:src="@drawable/logout"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageButton>
+        -->
+
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView2"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView2"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="1.0"-->
+    <!--        app:srcCompat="@drawable/logout" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
